@@ -55,7 +55,6 @@ email - почта, значение "henry.carter@aptmail.com".
 В объекте owner есть свойствао email
 Значение свойства email это "henry.carter@aptmail.com" */
 
-
 /* 
 
 const apartment = {
@@ -72,3 +71,26 @@ const apartment = {
 };
 
 */
+
+
+
+
+/* --------------------------------- TASK 2 --------------------------------- */
+
+/*  Дополни код присвоив объявленным переменным выражения обращения к соответствующим свойствам обьекта apartment.
+
+aptRating - рейтинг;
+aptDescr - описание;
+aptPrice - цена;
+aptTags - теги.
+Объявлена переменная apartment
+Значение переменной apartment это объект
+У объекта переменной apartment присутствуют свойства imgUrl, descr, rating, price и tags со значениями
+Объявлена переменная aptRating
+Значение переменной aptRating это число 4
+Объявлена переменная aptDescr
+Значение переменной aptDescr это строка "Spacious apartment in the city center"
+Объявлена переменная aptPrice
+Значение переменной aptPrice это число 2153
+Объявлена переменная aptTags
+Значение переменной aptTags это массив строк ["premium", "promoted", "top"]  */
