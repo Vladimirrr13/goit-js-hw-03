@@ -553,3 +553,16 @@ console.log(values);
 
 */
 
+function countProps(object) {
+  let count = 0;
+  const keys = Object.keys(object);
+  
+  for (const key of keys) {
+    if (object.hasOwnProperty(key)) {
+      count += 1;
+    }
+  }
+  
+  return count;
+}
+
