@@ -434,7 +434,6 @@ const apartment = {
 Объявлена переменная values.
 Значение переменной values это массив ["Spacious apartment in the city center", 4, 2153].
 
-
 */
 
 /* 
