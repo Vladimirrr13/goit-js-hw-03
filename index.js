@@ -536,7 +536,7 @@ console.log(values);
 
 
 
-/*------------------------- TASK 14 -------------------------*/
+*------------------------- TASK 14 -------------------------*/
 
 /* 
 
@@ -551,16 +551,119 @@ console.log(values);
 
 */
 
+/* 
+
 function countProps(object) {
-  let count = 0;
-  const keys = Object.keys(object);
-  
-  for (const key of keys) {
-    if (object.hasOwnProperty(key)) {
-      count += 1;
-    }
-  }
-  
-  return count;
+
+  return Object.keys(object).length;
 }
 
+*/
+
+
+
+
+/*------------------------- TASK 15 -------------------------*/
+
+/* 
+
+Запиши в переменную keys массив ключей собственных свойств объекта apartment, а в переменную values массив всех значений его свойств. Используй методы Object.keys() и Object.values().
+
+Объявлена переменная apartment
+Значение переменной apartment это объект
+Объявлена переменная keys
+Значение переменной keys это массив ["descr", "rating", "price"]
+Объявлена переменная values
+Значение переменной values это массив ["Spacious apartment in the city center", 4, 2153]
+Для получения массива ключей объекта apartment используется Object.keys()
+Для получения массива значений объекта apartment используется Object.values()
+
+*/
+
+/* 
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);
+
+
+*/
+
+
+
+
+/*------------------------- TASK 16 -------------------------*/
+
+/* 
+
+Напиши функцию countTotalSalary(salaries) которая принимает объект зарплат, где имя свойства это имя сотрудника, а значение свойства это зарплата. Функция должна рассчитать общую сумму зарплат сотрудников и вернуть её. Используй переменную totalSalary для хранения общей суммы зарплаты.
+
+Объявлена функция countTotalSalary(salaries)
+Вызов countTotalSalary({}) возвращает 0
+Вызов countTotalSalary({ mango: 100, poly: 150, alfred: 80 }) возвращает 330
+Вызов countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) возвращает 400
+Функция учитывает только собственные свойства объекта
+
+*/
+
+/* 
+
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+
+  for (const key in salaries) {
+    // Проверяем, чтобы свойство было собственным
+    if (salaries.hasOwnProperty(key)) {
+      totalSalary += salaries[key];
+    }
+  }
+
+  return totalSalary;
+}
+*/
+
+
+
+
+/*------------------------- TASK 17 -------------------------*/
+
+/* 
+
+Перебери массив объектов colors используя цикл for...of. Добавь в массив hexColors значения свойств hex, а в массив rgbColors значения свойств rgb из всех объектов массива colors.
+
+Объявлена переменная colors
+Значение переменной colors это массив
+Объявлена переменная hexColors
+Значение переменной hexColors это массив ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
+Объявлена переменная rgbColors
+Значение переменной rgbColors это массив ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+
+*/
+
+/* 
+
+const colors = [
+  { name: "red", hex: "#f44336", rgb: "244,67,54" },
+  { name: "blue", hex: "#2196f3", rgb: "33,150,243" },
+  { name: "green", hex: "#4caf50", rgb: "76,175,80" },
+  { name: "yellow", hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+
+for (const color of colors) {
+  hexColors.push(color.hex);
+  rgbColors.push(color.rgb);
+}
+
+console.log(hexColors );
+console.log(rgbColors);
+console.log();
+
+*/
