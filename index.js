@@ -1518,3 +1518,133 @@ console.log();
 console.log();
 
 */
+
+
+
+
+/*------------------------- TASK 36 -------------------------*/
+
+/* 
+
+К нам обратилась владелица лавки зелий «У старой жабы» и заказала программу для ведения инвентаря - добавления, удаления, поиска и обновления зелий. Добавь объекту atTheOldToad свойство potions, значением которого сделай пустой массив.
+
+Объявлена переменная atTheOldToad
+Значение переменной atTheOldToad это объект
+Значение свойства atTheOldToad.potions это массив []
+*/
+
+/* 
+
+const atTheOldToad = {
+  potions: [],
+  // Другие свойства объекта
+};
+
+console.log(atTheOldToad.potions);
+*/
+
+
+
+
+/*------------------------- TASK 37 -------------------------*/
+
+/* 
+
+Добавь объекту atTheOldToad метод getPotions(), который просто возвращает значение свойства potions.
+
+Объявлена переменная atTheOldToad
+Значение переменной atTheOldToad это объект
+Значение свойства atTheOldToad.potions это массив ["Speed potion", "Dragon breath", "Stone skin"]
+Значение свойства atTheOldToad.getPotions это метод объекта
+Вызов метода atTheOldToad.getPotions() возвращает ["Speed potion", "Dragon breath", "Stone skin"]
+
+
+*/
+
+/* 
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  getPotions() {
+    return this.potions;
+  }
+};
+
+console.log(atTheOldToad.potions);
+console.log(atTheOldToad.getPotions());
+*/
+
+
+
+
+
+/*------------------------- TASK 38 -------------------------*/
+
+/* 
+
+Дополни метод addPotion(potionName) так, чтобы он добавлял зелье potionName в конец массива зелий в свойстве potions.
+
+Объявлена переменная atTheOldToad
+Значение переменной atTheOldToad это объект
+Значение свойства atTheOldToad.potions это массив ["Speed potion", "Dragon breath", "Stone skin"]
+Значение свойства atTheOldToad.addPotion это метод объекта
+После первого вызова метода atTheOldToad.addPotion("Invisibility"), в свойстве potions будет массив ["Speed potion", "Dragon breath", "Stone skin", "Invisibility"]
+После второго вызова метода atTheOldToad.addPotion("Power potion"), в свойстве potions будет массив ["Speed potion", "Dragon breath", "Stone skin", "Invisibility", "Power potion"]
+
+*/
+
+/* 
+
+const atTheOldToad = {
+potions: ["Speed potion", "Dragon breath", "Stone skin"],
+addPotion(potionName) {
+// Change code below this line
+this.potions.push(potionName);
+// Change code above this line
+},
+};
+
+console.log();
+console.log();
+console.log();
+*/
+
+
+
+
+
+/*------------------------- TASK 39 -------------------------*/
+
+/* 
+
+Дополни метод removePotion(potionName) так, чтобы он удалял зелье potionName из массива зелий в свойстве potions.
+
+Объявлена переменная atTheOldToad
+Значение переменной atTheOldToad это объект
+Значение свойства atTheOldToad.potions это массив ["Speed potion", "Dragon breath", "Stone skin"]
+Значение свойства atTheOldToad.removePotion это метод объекта
+После первого вызова метода atTheOldToad.removePotion("Dragon breath"), в свойстве potions будет массив ["Speed potion", Stone skin"]
+После второго вызова метода atTheOldToad.removePotion("Speed potion"), в свойстве potions будет массив ["Stone skin"]
+*/
+
+/* 
+
+const atTheOldToad = {
+    potions: ["Speed potion", "Dragon breath", "Stone skin"],
+    removePotion(potionName) {
+// Change code below this line
+    const potionIndex = this.potions.indexOf(potionName);
+       if (potionIndex !== -1) {
+       this.potions.splice(potionIndex, 1);
+}
+// Change code above this line
+},
+};
+
+console.log();
+*/
+
+
+
+
+
